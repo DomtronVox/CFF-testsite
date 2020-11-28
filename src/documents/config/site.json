@@ -2,8 +2,16 @@
   "logo_image": "images/favicon.png",
   "sidebar_links_list": [
     {
-      "text": "Another cool place",
-      "link": "/cool_place.html"
+      "text": "Our telegram at t.me/christianfurs",
+      "link": "https://t.me/christianfurs"
+    },
+    {
+      "text": "Discord server invite link: https://discord.gg/EQkUQJc.",
+      "link": "https://discord.gg/EQkUQJc"
+    },
+    {
+      "text": "Our Twitter at https://twitter.com/furryfellowship",
+      "link": "https://twitter.com/furryfellowship"
     }
   ],
   "brand": "Christian Furry Fellowship",
