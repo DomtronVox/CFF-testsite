@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: DomtronVox/StaticSiteCMS-Template # Path to your Github repository
+  repo: DomtronVox/CFF-testsite # Path to your Github repository
   branch: master # Branch to update
 
 media_folder: src/files/images/
