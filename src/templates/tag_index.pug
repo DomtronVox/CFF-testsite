@@ -6,18 +6,15 @@ block content
     p Below is a listing of all pages with the tag <b>#{tag}</b> from newest to oldest.
 
     each post in pagination.files
-        
-       h1 
-           a(href=post.path.dhref + post.path.name + ".html") #{post.title}
+        article(class="post_preview")
+            //- Must pull several variables out of the post var so partial can use them.
+            - var title = post.title
+            - var title_link = post.path.dhref + post.path.name
+            - var date = post.date
+            - var tag_list = post.tag_list
+            include partials/post_header.pug
 
-       p Pulish Date:
-                span(class="date")  #{post.date}
+            p Summery: #{post.summery_text}
 
-       //- must pull this variable out of individual posts so the tag_list partial can use it
-       - var tag_list = post.tag_list
-       include partials/tag_list.pug
-
-       p Summery: #{post.summery_text}
-
-       span 
-           a(href=post.path.dhref + post.path.name + ".html") Read More
+            span 
+                a(href=title_link + ".html") Read More
